@@ -108,7 +108,7 @@ public class CurtainFlow implements CurtainFlowInterface {
     }
 
     @Override
-    public <T extends View> T findViewInCurrentCurtain(int id) {
+    public View findViewInCurrentCurtain(int id) {
         if (null != guider) {
             return guider.findViewByIdInTopView(id);
         }

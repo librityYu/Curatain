@@ -95,7 +95,7 @@ public class GuideDialogFragment extends DialogFragment implements IGuide {
 
     @Override
     public void updateHollows(HollowInfo... hollows) {
-        GuideView guideView = contentView.findViewById(GUIDE_ID);
+        GuideView guideView = (GuideView) contentView.findViewById(GUIDE_ID);
         if (null != guideView) {
             guideView.setHollowInfo(hollows);
         }
@@ -111,7 +111,7 @@ public class GuideDialogFragment extends DialogFragment implements IGuide {
     }
 
     @Override
-    public <T extends View> T findViewByIdInTopView(int id) {
+    public View findViewByIdInTopView(int id) {
         if (null == contentView) {
             return null;
         }
