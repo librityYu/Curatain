@@ -104,8 +104,8 @@ public class GuideView extends View {
                     int targetRight = mHollow.targetBound.right;
                     int targetTop = mHollow.targetBound.top;
                     int targetBottom = mHollow.targetBound.bottom;
-                    if (event.getRawX() >= targetleft && event.getRawX() <= targetRight
-                            && event.getRawY() >= targetTop && event.getRawY() <= targetBottom
+                    if (event.getX() >= targetleft && event.getX() <= targetRight
+                            && event.getY() >= targetTop && event.getY() <= targetBottom
                     ) {
                         if (onClickTargetView != null) {
                             onClickTargetView.targetViewClick();
